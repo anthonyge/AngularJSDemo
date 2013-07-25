@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="scripts/angular/angular.js"></script>
+    <script src="scripts/MyModule.js"></script>
+    <title>This is demo of using Module</title>
+</head>
+<body>
+    <!--This is filter demo-->
+    <div ng-app="MyModule.Filter" ng-controller="myFilterController">
+        <H1>Filter Demo</H1>
+        <input ng-model="inputVal"/>
+        <div>{{ inputVal | greetFilter }}</div>
+    </div>
+
+
+</body>
+</html>
